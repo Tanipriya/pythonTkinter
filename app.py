@@ -20,6 +20,7 @@ class Student:
         s_title= Label(frame2, text="Details Manage", bg="crimson", fg="white", font= ("times_new_roman", 20, "bold") )
         s_title.grid(row=0, columnspan=2, pady=20)
 
+        
 
 root= Tk()
 ob= Student(root)
