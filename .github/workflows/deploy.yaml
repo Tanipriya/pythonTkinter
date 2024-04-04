@@ -19,7 +19,7 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Create .env file dynamically 🧨
+      - name: Create .env file dynamically 
         env:
           ENV: ${{ secrets.ENV }}
           EC2_USERNAME: ${{ secrets.EC2_USERNAME }}
